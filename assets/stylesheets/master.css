@@ -1,0 +1,50 @@
+* {
+  margin: auto;
+  padding: 0; }
+
+body {
+  font-family: "Dosis", sans-serif; }
+  body header {
+    background: #e6e6e6;
+    padding: 10px;
+    text-align: center; }
+    body header h1 {
+      color: #464646; }
+  body .container {
+    position: relative;
+    background: #e6e6e6;
+    border-radius: 4px;
+    height: 100px;
+    width: 100px;
+    margin: 5px; }
+    body .container .anim-menu {
+      cursor: pointer;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      padding: 10px; }
+      body .container .anim-menu .bar-1, body .container .anim-menu .bar-2, body .container .anim-menu .bar-3 {
+        height: 5px;
+        width: 40px;
+        margin: 4px 0;
+        background: #1a1a1a;
+        border-radius: 5px; }
+
+.hide {
+  display: none;
+  -webkit-transition: display linear 1s;
+  transition: display linear 1s; }
+
+.rotateSec {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: transform linear 0.4s;
+  transition: transform linear 0.4s; }
+
+.rotateThird {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transition: transform linear 0.4s;
+  transition: transform linear 0.4s; }
+
+/*# sourceMappingURL=master.css.map */

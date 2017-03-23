@@ -1,0 +1,55 @@
+// importing bourbon
+@import "bourbon/bourbon"
+// initial reset
+*
+  margin: auto
+  padding: 0
+body
+  font-family: 'Dosis', sans-serif
+  header
+    background: tint(grey, 80%)
+    padding: 10px
+    text-align: center
+    h1
+      color: shade(grey, 45%)
+  .container
+    position: relative
+    // top: 10px
+    background: tint(grey, 80%)
+    border-radius: 4px
+    @include size(100px)
+    margin: 5px
+    .anim-menu
+      cursor: pointer
+      // border: 1px solid #444
+      position: absolute
+      top: 10px
+      left: 10px
+      padding: 10px
+      .bar-1, .bar-2, .bar-3
+        @include size(40px 5px)
+        margin: 4px 0
+        background: shade(grey, 80%)
+        border-radius: 5px
+.hide
+  display: none
+  -webkit-transition: display linear 1s
+  transition: display linear 1s
+.rotateSec
+  -webkit-transform: rotate(45deg)
+  transform: rotate(45deg)
+  -webkit-transition: transform linear .4s
+  transition: transform linear .4s
+.rotateThird
+  -webkit-transform: rotate(-45deg)
+  transform: rotate(-45deg)
+  -webkit-transition: transform linear .4s
+  transition: transform linear .4s
+
+// ........... animating the first & third bar while fading the 2nd one.....
+// body
+//   .container
+//     .anim-menu
+//       .bar-1
+//         -webkit-transform: rotate(45deg)
+//         transform: rotate(45deg)
